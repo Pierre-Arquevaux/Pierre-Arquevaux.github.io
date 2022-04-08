@@ -1,0 +1,624 @@
+:root{
+    --color-primary : #7380ec;
+    --color-danger : #ff7782;
+    --color-success : #41f1b6;
+    --color-warning : #ffbb55;
+    --color-white : #fff;
+    --color-info-dark : #7d8da1;
+    --color-info-light : #dce1eb;
+    --color-dark : #363949;
+    --color-light : rgba(132,139,200,0.18);
+    --color-primary-variant : #111e88;
+    --color-dark-variant : #677483;
+    --color-background : #f6f6f9;
+
+    --card-border-radius : 2rem;
+    --border-radius-1 : 0.4rem;
+    --border-radius-1 : 0.8rem;
+    --border-radius-1 : 1.2rem;
+
+    --card-padding : 1.8rem;
+    --padding-1 : 1.2rem;
+
+    --box-shadow : 0 2rem 3rem var(--color-light);
+ }
+
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    appearance: 0;
+    text-decoration: none;
+    list-style: none;
+ }
+
+ html{
+     font-size: 14px;
+ }
+
+ body{
+     width : 100vw;
+     height : 100vh;
+     font-size: 0.88rem;
+     background: var(--color-background);
+     overflow: scroll;
+     background-color: var(--color-light);
+ }
+
+ a{
+     color: var(--color-dark);
+ }
+
+ .barremenutablette{
+    display : none;
+ }
+
+
+
+ .container{
+     width : 100%;
+     display: grid;
+     grid-template-columns: 15rem auto 20rem;
+ }
+
+ .side{
+     height : 100%;
+     position: relative;
+ }
+
+ 
+ .logo{
+    width: 80%;
+     height: 30vh;
+     margin: auto;
+    position: static;
+    top : 1%;
+    left : 3%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+    padding-bottom: 10rem;
+    margin-right: 1rem;
+ }
+
+ .logo-image img{
+     width : 50px;
+     height : auto;
+     border-radius: 50%;
+     
+ }
+
+ .logo-name{
+     font-size: 1.1rem;
+     padding-left: 0.2rem;
+ }
+
+ .logo-name span{
+     color: var(--color-success);
+ }
+
+ .menu {
+     
+     margin-top : 3rem ;
+     width: 80%;
+     height : 75vh;
+     position: absolute;
+     top : 11%;
+     left : 5%;
+     color : var(--color-info-dark);
+    
+     /* padding-top : 4rem */
+     
+ }
+
+ 
+
+
+ .menu div{
+     width: 100%;
+     height : 60px;
+     display: flex;
+     justify-content:left;
+    align-items: center;
+    
+ }
+
+ .close{
+     
+     position: absolute;
+     left : 50%;
+}
+ 
+ .menu div div{
+    padding-left: 2.5rem;
+    transition: 0.2s;
+ }
+
+ .menu div div:hover  {
+    background-color: rgba(17, 30, 136 , 0.2);
+    border-left: 12px solid var(--color-primary-variant);
+    color: var(--color-primary-variant);
+ }
+
+ 
+ .menu span{
+     color : var(--color-primary-variant)
+ }
+
+ .menu div h3{
+     margin-left: 15px;
+ }
+
+ /*MAIN*/
+
+ main{
+     
+     margin-top: 3rem;
+ }
+
+ main h1{
+     font-size: 2.7rem;
+     font-weight: bold;
+ }
+
+.main-title .date{
+    box-shadow: var(--box-shadow);
+     font-size: 0.9rem;
+     background-color: rgba(17, 30, 136 , 0.2);
+     width : 100px;
+     padding: 5px;
+     text-align: center;
+     border-radius: var(--card-border-radius);
+     margin-bottom: 1rem;
+ }
+
+ .main-dashboard{
+     width : 100%;
+     display: flex;
+     gap : 2rem;
+     justify-content: space-between;
+     margin-bottom: 1rem;
+ }
+
+ .dashboard{
+    box-shadow: var(--box-shadow);
+     background-color: var(--color-white);
+     width : 33%;
+     height : 14rem;
+     border-radius: var(--border-radius-1);
+     padding: 1.5rem;
+     display: flex;
+     justify-content: space-between;
+     
+     
+ }
+
+ .dashboard-left{
+     width : 49%;
+     
+ }
+
+ .logo-dashboard{
+     position: relative;
+     height :50px;
+     width : 50px;
+     border-radius: 50%;
+     background-color: var(--color-primary-variant);
+     color: var(--color-white);
+ }
+
+ .dashboard-left span{
+     font-size: 2rem;
+     position: absolute;
+     top: 50%;
+     left : 50%;
+     transform: translate(-50%,-50%);
+     
+ }
+ .totalsales{
+     padding-top: 1rem;
+     font-weight: bold;
+     font-size: 0.9rem;
+ }
+
+ .sales{
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+ }
+
+ .hours{
+    padding-top: 0.2rem;
+    font-size: 0.7rem;
+ }
+
+ .dashboard-right{
+    width : 49%;
+    position: relative;
+}
+
+.dashboard-right div{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border : 15px solid var(--color-primary);
+    border-radius: 50%;
+    height : 80px;
+    width : 80px;
+    
+}
+
+#sales{
+    background-color: var(--color-success);
+}
+
+#expenses{
+    background-color: var(--color-danger);
+}
+
+.dashboard-right  p{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+ .subtitles{
+     font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recentorders table{
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+    width : 100%;
+    margin: auto;
+    height : 14rem;
+    border-radius: var(--border-radius-1);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.recentorders table tr{
+    line-height: 2rem;
+}
+
+.recentorders table td{
+    border-bottom : 1px solid rgba(132,139,200,0.18);
+    padding: 0.8rem;
+}
+
+.recentorders table td:last-child{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.recentorders table td:nth-child(4){
+    color: var(--color-warning)
+}
+
+
+ 
+
+
+
+.show{
+    color: var(--color-primary);
+    width : 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    height : 3rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Otherside*/
+
+.otherside{
+
+    height : 81vh;
+    margin-top: 18%;
+    margin-left: 3rem;
+}
+
+.updates{
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+     width : 100%;
+     border-radius: var(--border-radius-1);
+     padding: 1.5rem;
+     margin-bottom: 2rem;
+     
+}
+
+
+/* .update{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+} */
+.upddate{
+    margin-bottom: 1rem;
+}
+.upddate img{
+    float: left;
+    display: block;
+    height : 40px;
+    width : auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.upddate span{
+    font-weight: bold;
+}
+
+.upddate p:last-of-type{
+    font-size: 0.8rem;
+   
+}
+
+.analytics{
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+     width : 100%;
+     border-radius: var(--border-radius-1);
+     padding: 1.5rem;
+     margin-bottom: 1rem;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.analytics .material-icons-sharp{
+    color: #fff;
+    background-color: var(--color-primary);
+    padding: 0.6rem;
+    border-radius: var(--card-border-radius);
+}
+
+#shop{
+    background-color: var(--color-danger);
+}
+
+#list{
+    background-color: var(--color-success);
+}
+
+.analytics p{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.analytics span{
+    
+    font-weight: 400;
+}
+
+
+
+.up{
+    color: var(--color-success);
+}
+
+.down{
+    color : var(--color-danger)
+}
+.addproduct{
+    border: 2px dashed var(--color-primary);
+    width : 100%;
+    border-radius: var(--border-radius-1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addproduct .material-icons-sharp{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.addproduct p{
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/*MEDIA QUERY*/
+
+@media  screen and (max-width : 1024px ) {
+
+    .body{
+        height : 100vh;
+        width : 100vw;
+        overflow: scroll;
+    }
+
+    .barremenutablette{
+        width : 100%;
+        margin: auto;
+        display:block;
+         height : 7%;
+         background-color: #fff;
+         position: relative;
+     }
+    
+     #btnmenu{
+         color: var(--color-primary-variant);
+         position: absolute;
+         top : 50%;
+         left : 10%;
+         transform: translate(-50%,-50%);
+         font-size: 3rem;
+     }
+
+     #btnmenu.active{
+        display: none
+    }
+
+
+     #close{
+         display: none;
+        position: absolute;
+        top : 50%;
+        left : 10%;
+        transform: translate(-50%,-50%);
+        font-size: 3rem;
+     }
+
+     #close.active{
+         display : inline
+     }
+    .container{
+        width : 95%;
+        margin: auto;
+        display: block;
+        position: relative;
+    }     
+
+    .logo{
+        display: none;
+
+    }
+
+    .menu{
+        z-index: 2;
+        width : 100%; 
+        height : 100%;
+        display: none;
+        background-color: var(--color-info-light);
+        position: fixed;
+        top : 3.6%;
+        left : 0;
+        
+        
+    }
+
+    .menu.active{
+        display: inline;
+    }
+    
+
+   
+
+    main{
+     
+        margin-top: 0.5rem;
+    }
+   
+
+    .otherside{
+         height : auto;
+         margin-top: 2%;
+         margin-left: 0rem;
+    }
+
+    .updates{
+        width : 60%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .upddate{
+        line-height: 1.5rem;
+    }
+
+    .analytics p{
+        margin-right: 5rem;
+        font-size: 1.3rem;
+    }
+    
+    
+}
+
+@media  screen and (max-width : 767px ){
+
+    .body{
+        height : 100vh;
+        width : 100vw;
+        overflow: scroll;
+    }
+    .container{
+        width : 95%;
+        margin: auto;
+        display: block;
+        position: relative;
+    }   
+    
+    .menu {
+        width : 100%; 
+        height : 100%
+    }
+    .main-dashboard{
+        width : 100%;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .dashboard{
+        box-shadow: var(--box-shadow);
+         background-color: var(--color-white);
+         width : 100%;
+         height : 8rem;
+         margin-bottom: 1rem;
+    }
+
+    .updates{
+        width : 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .dashboard-left{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        
+    }
+       
+    .logo-dashboard{
+        height :30px;
+        width : 30px;
+    
+    }
+    .totalsales{
+        padding-top: 0.2rem;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+   
+    .sales{
+       padding-top: 0.2rem;
+       font-weight: bold;
+       font-size: 1.2rem;
+    }
+   
+    .hours{
+       padding-top: 0.2rem;
+       font-size: 0.7rem;
+    }
+         
+    .recentorders table{
+        width: fit-content;
+    margin-right: 0;
+    }
+        
+    .recentorders table{
+        padding: 0rem;
+        
+    }
+    
+}
+    
