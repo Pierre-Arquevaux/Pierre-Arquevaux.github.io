@@ -1,264 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>Responsive admin JS</title>
-</head>
-<body>
-    <div class="barremenutablette">
-        <span class="material-icons-sharp" id="btnmenu">
-            menu
-            </span>
-        <span class="material-icons-sharp" id="close">close</span>
-    </div>
-    <div class="container">
-    
-        <div class="side">
-                
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="images/logo.webp" alt="">
-                </div>
-                <div class="logo-name">
-                    <h2>PAR<span class="danger">ROT</span></h2>
-                </div>
-            </div>
-    
-            <div class="menu">
-                   
+    <title>Maison d'assistantes maternelles Kouign A'Mam</title>
 
-                <div>
-                    <div>
-                        <a href="#"><span class="material-icons-sharp">grid_view</span></a>
-                        <h3>Dashboard</h3>  
-                    </div>  
-                </div>
-                <div>
-                    <div>
-                        <a href="#"><span class="material-icons-sharp">person_outline</span> </a>
-                        <h3>Customers</h3>  
-                    </div>
-                </div>
-                <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">receipt_long</span> </a>    
-                            <h3>Orders</h3>   
-                       </div>
-                   </div>
-                   <div>
-                       <div>
-                             <a href="#"><span class="material-icons-sharp">insights</span> </a>
-                            <h3>Analytics</h3>    
-                       </div>
-                   </div>
-                   <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">mail_outline</span></a>
-                            <h3>Messages</h3>    
-                    
-                       </div>
-                   </div>
-     
-                   <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">inventory</span> </a>
-                            <h3>Products</h3>  
-                       </div>
-                   </div>
-                   <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">report_gmailerrorred</span>  </a>
-                            <h3>Reports</h3>  
-                   
-                       </div>
-                   </div>
-                   <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">settings</span> </a>
-                            <h3>Setting</h3> 
-                       </div>
-                   </div>
-                   <div>
-                       <div>
-                            <a href="#"><span class="material-icons-sharp">add</span></a>
-                            <h3>Add products</h3> 
-                       </div>
-                   </div>
-                </div>
-            </div>
-        <main>
-            <div class="main-title">
-                <h1>Dashboard</h1>
-                <div class="date">07/04/2022</div>
-            </div>
-            <div class="main-dashboard">
-                <div class="dashboard">
-                    <div class="dashboard-left">
-                        <div class="logo-dashboard">
-                            <span class="material-icons-sharp">inventory</span>
-                        </div>
-                        <p class="totalsales">Total Sales</p>
-                        <p class="sales">25.024$</p>
-                        <p class="hours">last 24 hours</p>
-                    </div>
-                    <div class="dashboard-right">
-                        <div><p>81%</p></div>
-                    </div>
-                </div>
-                <div class="dashboard">
-                    <div class="dashboard-left">
-                        <div class="logo-dashboard" id="expenses">
-                            <span class="material-icons-sharp">
-                                bar_chart
-                                </span>
-                        </div>
-                        <p class="totalsales">Total Sales</p>
-                        <p class="sales">14.160$</p>
-                        <p class="hours">last 24 hours</p>
-                    </div>
-                    <div class="dashboard-right">
-                        <div><p>62%</p></div>
-                    </div>
-                </div>
-                <div class="dashboard">
-                    <div class="dashboard-left">
-                        <div class="logo-dashboard" id="sales">
-                            <span class="material-icons-sharp list" >receipt_long</span>
-                        </div>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <img src="img/logo_mam.jpg" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Accueil</a>
+            <a href="#about">La maison</a>
+            <a href="#menu">Les assistantes</a>
+            <a href="#review">Avis des parents</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!--home section -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Bienvenue chez Kouign A'<span>M</span><span>a</span><span>m</span></h3>
+            <p>La Maison d’Assistantes Maternelles (MAM) Kouign A'Mam permet d’accueillir simultanément 12 enfants.</p>
+            <p> Il s'agit d'un mode de garde combinant les avantages d’un accueil familial et collectif.</p>
+            <p> Notre envie avec cette maison est d'obtenir les mêmes avantages qu’une assistante maternelle à domicile dans un lieu dédié aux enfants et favorisant la vie en collectivité </p>
+            <a href="#contact" class="btn">Contactez nous</a>
+        </div>
+    </section>
+
+    <!--home section ends-->
+
+    <!-- about sections -->
+
+    <section class="about" id="about">
+        <h1 class="heading">La maison</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                      <div class="carousel">
+                        <div class="image-one"></div>
+                        <div class="image-two"></div>
+                        <div class="image-three"></div>
                         
-                        <p class="totalsales">Total Sales</p>
-                        <p class="sales">10.864$</p>
-                        <p class="hours">last 24 hours</p>
+                      </div>
+                    
                     </div>
-                    <div class="dashboard-right">
-                        <div><p>44%</p></div>
-                    </div>
+                  </div>
+                <h3>Accueil Parents/Enfants</h3>
+                <p class="btn">des casiers nominatifs ainsi que des porte-lanteaux sont à disposition à l'entrée</p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Espace de Vie</h3> 
+                <p class="btn">Un espace équipé de jeux et de jouets adaptés à l'éveil des enfants</p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Cuisine</h3>
+                <p class="btn">reservé aux adultes pour la préparation des repas</p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Salle de change</h3>
+                <p class="btn">deux plans a langer, et un toilette pour les plus grands</p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Les chambres</h3>
+                <p class="btn">des lits adaptés avec le linge de lit pour tous les ages  </p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>La salle de motricité</h3>
+                <p class="btn">une salle où petits et grands peuvent améliorer leur motricité en toute sécurité</p>
+            </div>
+
+            <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Le jardin</h3>
+                <p class="btn">Dès les beaux jours, un jardin cloturé et sécurisé</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!--home about ends-->
+
+    <!--menu section -->
+    <section class="menu" id="menu">
+        <h1 class="heading"><span>Vos assistantes maternelles</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/assistantes.png" alt="menu">
+                <!-- <h3>Alice</h3>
+                <p class="btn">Assistante maternelle depuis 2020</p> -->
+            </div>
+
+            <!-- <div class="box">
+                <img src="img/logo_mam.jpg" alt="menu">
+                <h3>Nolwenn</h3> 
+                <p class="btn">Assistante maternelle depuis 2020</p>
+            </div>
+
+            <div class="box">
+                <img src="img/gwenola.jpg" alt="menu">
+                <h3>Gwenola</h3>
+                <p class="btn">Assistante maternelle depuis 2020</p>>
+            </div> -->
+
+            
+        </div>
+    </section>
+
+    <!--menu section ends-->
+
+    <!--review section  -->
+    <section class="review" id="review">
+        <h1 class="heading">l'avis des parents</h1>
+        <div class="box-container">
+            <div class="box">
+                <img class="quote" src="img/quote-img.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores provident vel veniam
+                    delectus deleniti quaerat aperiam ratione, officia dicta explicabo eveniet sit molestias quisquam
+                    debitis optio. Voluptatem, labore minima.</p>
+                <h3>claudius arquevaux</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img class="quote" src="img/quote-img.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores provident vel veniam
+                    delectus deleniti quaerat aperiam ratione, officia dicta explicabo eveniet sit molestias quisquam
+                    debitis optio. Voluptatem, labore minima.</p>
+                <h3>Roberta Solana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img class="quote" src="img/quote-img.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores provident vel veniam
+                    delectus deleniti quaerat aperiam ratione, officia dicta explicabo eveniet sit molestias quisquam
+                    debitis optio. Voluptatem, labore minima.</p>
+                <h3>luigi zuddas</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--review section ends-->
+
+    <!--contact section  -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contactez nous</span> </h1>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d660.3444120142818!2d-1.9550723706390378!3d48.54515749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e85888c2cfc29%3A0xa26c43c65027533b!2s9%20Rue%20de%20la%20Grande%20Hermine%2C%2035430%20La%20Ville-%C3%A9s-Nonais!5e0!3m2!1sfr!2sfr!4v1654613731845!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3></h3>
+                <div class="inputBox">
+                    <span class="fas fa-user">
+                        <input type="text" placeholder="Nom et Prénom">
+                    </span>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope">
+                        <input type="email" placeholder="Mail">
+                    </span>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone">
+                        <input type="number" placeholder="Teléphone">
+                    </span>
+                </div>
+                <input type="submit" value="Envoyer" name="Submit" id="submit" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!--contact section ends-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <a href="https://www.facebook.com/kouignamam" target="_blank"><img src="img/anniversaire.jpg" alt=""></a>
+                </div>
+                <div class="content">
+                    <a href="https://www.facebook.com/kouignamam" target="_blank" class="title">Happy Birthday</a>
+                    <span>par Kouign A'Mam</span>
+                    <p>Ce Mardi 7 Juin 2022, nous avons fêté les un an de la MAM, nous remercions encore les parents et les enfants pour leurs confiances</p>
+                    <a href="https://www.facebook.com/kouignamam" target="_blank" class="btn">Voir notre facebook</a>
                 </div>
             </div>
-            <div class="recentorders">
-                <div>
-                  <h2 class="subtitles">Recent Orders</h1>  
+            <div class="box">
+                <div class="image">
+                   <a href="https://pimpant.co/l-avantage-des-couches-lavables-face-aux-couches-jetables/#:~:text=Avantage%20aux%20couches%20lavables%20l%C3%A0,contact%20avec%20des%20produits%20n%C3%A9fastes."><img src="img/couches.jpg" alt=""></a>
                 </div>
-                <div>
-                    <table>
-                        <tr>
-                            <th>Product Name</th>
-                            <th>Product Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                        <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td>Pending</td>
-                            <td>Details</td>
-                        </tr>
-                    </table>
-                </div>
-                <p class="show">Show All</p>
-            </div>
-        </main>
-        <aside class="otherside">
-            <div class="recentupdates">
-                <h2 class="subtitles">Recent Updates</h2>
-                <div class="updates">
-                    <div class="upddate">
-                        <img src="images/profil.webp" alt="">
-                        <p><span>Mike Tyson</span>reveived his order of Nightlion tech GPS drone</p>
-                        <p>2 Minutes ago</p>
-                    </div>
-                
-                    <div class="upddate">
-                        <img src="images/profil.webp" alt="">
-                        <p><span>Mike Tyson</span>reveived his order of Nightlion tech GPS drone</p>
-                        <p>2 Minutes ago</p>
-                    </div>
-                
-                    <div class="upddate">
-                            <img src="images/profil.webp" alt="">
-                            <p><span>Mike Tyson</span>reveived his order of Nightlion tech GPS drone</p>
-                            <p>2 Minutes ago</p>
-                    </div>
+                <div class="content">
+                    <a href="https://pimpant.co/l-avantage-des-couches-lavables-face-aux-couches-jetables/#:~:text=Avantage%20aux%20couches%20lavables%20l%C3%A0,contact%20avec%20des%20produits%20n%C3%A9fastes." class="title">Notre engagement</a>
+                    <span>par Kouign A'Mam</span>
+                    <p>Nous nous engagageons pour l'environnement. A notre échelle, cela se traduit par l'utilisation de couches lavables</p>
+                    <a href="https://pimpant.co/l-avantage-des-couches-lavables-face-aux-couches-jetables/#:~:text=Avantage%20aux%20couches%20lavables%20l%C3%A0,contact%20avec%20des%20produits%20n%C3%A9fastes." class="btn">Les couches lavables</a>
                 </div>
             </div>
-            <div class="salesanalytics">
-                <h2 class="subtitles">Sales Analytics</h2>
-                <div class="analytics">
-                    <div><span class="material-icons-sharp caddy">shopping_cart</span></div>
-                    <div class="bold"><p>ONLINE ORDERS</p><span>Last 24 hours</span></div>
-                    <div><p class="up">+39%</p></div>
-                    <div><p>3849</p></div>
+
+
+            <div class="box">
+                <div class="image">
+                    <a href="https://la-ville-es-nonais.fr/loisirs-et-vie-associative/la-bibliotheque/#:~:text=La%20biblioth%C3%A8que%20de%20La%20Ville,pas%20inscrit%20tu%20peux%20venir."><img src="img/livre.jpg" alt=""></a>
                 </div>
-                <div class="analytics">
-                    <div><span class="material-icons-sharp shop" id="shop"> local_mall</span></div>
-                    <div class="bold"><p>ONLINE ORDERS</p><span>Last 24 hours</span></div>
-                    <div><p class="down">-17%</p></div>
-                    <div><p>1100</p></div>
-                </div>
-                <div class="analytics">
-                    <div> <span class="material-icons-sharp list" id="list">receipt_long</span></div>
-                    <div class="bold"><p>ONLINE ORDERS</p><span>Last 24 hours</span></div>
-                    <div><p class="up">+25%</p></div>
-                    <div><p>849</p></div>
-                </div>
-                <div class="addproduct">
-                    <div><span class="material-icons-sharp" >add</span></div>
-                    <div><p>Add Product</p></div>
+                <div class="content">
+                    <a href="https://la-ville-es-nonais.fr/loisirs-et-vie-associative/la-bibliotheque/#:~:text=La%20biblioth%C3%A8que%20de%20La%20Ville,pas%20inscrit%20tu%20peux%20venir." class="title">La bibliothèque</a>
+                    <span>par Kouign A'Mam</span>
+                    <p>La bibliothèque de la Ville es Nonais permet aux enfants de grandir par la lecture, et de découvrir de nouvelles choses comme l'anglais</p>
+                    <a href="https://la-ville-es-nonais.fr/loisirs-et-vie-associative/la-bibliotheque/#:~:text=La%20biblioth%C3%A8que%20de%20La%20Ville,pas%20inscrit%20tu%20peux%20venir." class="btn">Site de la Ville-es-Nonais</a>
                 </div>
             </div>
-        </aside>
-    </div>
+        </div>
+    </section>
+    <!--blogs section ends-->
+
+    <!--footer section-->
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/kouignamam" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/kouignamam/?hl=fr" target="_blank" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">La maison</a>
+            <a href="#menu">Les assistantes</a>
+            <a href="#review">Avis des parents</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </div>
+
+        <div class="credit">Site crée par <span>Pierre Arquevaux</span> </div>
+    </section>
+    <!--footer section ends-->
+
+    <script src="app.js"></script>
 </body>
+
 </html>
