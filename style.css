@@ -571,6 +571,11 @@ section{
 
 @media screen and (max-width: 768px) {
 
+    .home{
+        background: none;
+        background-position: left;
+    }
+
   .carousel-wrapper {
     width: 240px * 1.3;
     height: 150px * 1.4;
@@ -592,24 +597,15 @@ section{
   
 
   @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-240px);
-    }
-    65% {
-      transform: translateX(-240px);
-    }
-    70% {
-      transform: translateX(-240px * 2);
-    }
-    98% {
-      transform: translateX(-240px * 2);
-    }
-    100% {
-      transform: translateX(0);
-    }
+    0% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateX(-400px);
+      }
+      66% {
+        transform: translateX(-800px);
+      }
   }
 }
 
@@ -709,6 +705,23 @@ section{
 @media(max-width : 450px){
     html {
         font-size: 50%;
+    }
+
+    .home {
+        margin-top: -2rem;
+        margin-bottom: 10rem;
+    }
+
+    .home .content h3{
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    .home .content p{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 1.5;
+      
     }
 
     
