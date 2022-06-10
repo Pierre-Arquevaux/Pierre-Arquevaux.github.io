@@ -606,6 +606,10 @@ section{
 }
 
 @media(max-width : 769px){
+
+    html{
+        scroll-behavior:auto;
+    }
     #menu-btn{
         display: inline-block;
         font-size: 4.5rem;
@@ -629,6 +633,9 @@ section{
         transform: translateX(0%);
     }
 
+    .heading{
+        margin-top: 6rem;
+    }
     .header .navbar a{
         color: var(--black);
         display: block;
@@ -648,21 +655,72 @@ section{
         right: 2rem;
     }
 
-    .home{
+    .home {
+        margin-bottom: 10rem;
         background: none;
-        justify-content: center;
+        width : 85%;
+        margin: auto;
         text-align: center;
     }
 
     .home .content h3{
-        font-size: 4.5rem;
+        margin-top: 10%;
+        margin-bottom: 2rem;
+        font-size: 4.3rem;
     }
-
+    
     .home .content p{
-        font-size: 1.5rem;
-        text-align: justify;
+        padding-bottom: 2rem;
+        font-size: 3rem;
+        line-height: 1.5;
     }
 
+    .home .content a{
+        margin-top: 2rem;
+        font-size: 3.5rem;
+    }
+
+      .about .box-container .box h3{
+        font-size: 3.5rem;
+        padding: 0.5rem 0;
+      }
+      
+      .about .box-container .box p{
+          font-size: 2.5rem;
+        
+        }
+
+        .blogs .box-container .box .content .title{
+            font-size: 3.5rem;
+            line-height: 1;
+            color: var(--main-color)
+        }
+        
+        .blogs .box-container .box .content span{
+            font-size: 2rem;
+        }
+        
+        .blogs .box-container .box .content p{
+            font-size: 2.5rem;
+            line-height: 1.4;
+            color: var(--main-color);
+            padding: 1rem;
+        }
+
+        .blogs .box-container .box .content a{
+            font-size: 2.5rem;
+        }
+
+        .review .box-container .box p{
+            font-size: 2.5rem;
+         
+            line-height: 3rem;
+        }
+
+        .contact .row form .inputBox input{
+            font-size: 2.5rem;
+         
+        }
     .carousel {
         margin: auto;
         width: 320px;
@@ -672,8 +730,10 @@ section{
 }
 
 @media(max-width : 450px){
+
     html {
         font-size: 50%;
+        
     }
 
     .header .logo img{
