@@ -518,7 +518,7 @@ section{
 }
 
 .blogs .box-container .box .content span{
-    color : var(--main-color);
+    color : #6fbc3c;
     display: block;
     padding: 0.5rem;
     font-size: 1.3rem;
@@ -719,6 +719,34 @@ section{
         
         }
 
+        .blogs .box-container .box .content .title{
+            font-size: 3.5rem;
+            line-height: 1;
+            color: var(--main-color)
+        }
+        
+        .blogs .box-container .box .content span{
+            font-size: 2rem;
+        }
+        
+        .blogs .box-container .box .content p{
+            font-size: 2.5rem;
+            line-height: 1.4;
+            color: var(--main-color);
+            padding: 1rem;
+        }
+
+        .review .box-container .box p{
+            font-size: 2.5rem;
+         
+            line-height: 3rem;
+          
+        }
+
+        .contact .row form .inputBox input{
+            font-size: 2.5rem;
+         
+        }
     
 }
 
